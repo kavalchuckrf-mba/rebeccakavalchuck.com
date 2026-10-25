@@ -40,6 +40,29 @@ a{color:#6b2346}a:hover{color:#4a1830}
 .cs-row{padding:72px 24px}
 }
 </style>
+<style>
+@media screen{.print-only{display:none}}
+@media print{
+@page{size:letter;margin:0.5in}
+header,#contact,footer{display:none !important}
+a[href="index.html#work"],a[href="#results"],#top a[href$="Case_Study.pdf"]{display:none !important}
+section{border-top:none !important}
+#top{padding:0 0 12px !important}
+.cs-row{padding:18px 0 !important;display:block !important}
+.cs-side,.cs-main{width:100% !important;max-width:none !important}
+.cs-side{margin-bottom:10px}
+.cs-main{padding-top:0 !important}
+section>div{padding:18px 0 !important;gap:20px !important}
+#approach>div>div:first-child{display:block !important}
+#execution>div>div:first-child{display:block !important;margin-bottom:20px !important}
+#execution>div>div:first-child p{margin-top:6px !important;max-width:none !important}
+section[style*="background"]{background:#ffffff !important}
+article,.tiers,figure,li,[style*="border-radius: 16px"],[style*="border-radius: 12px"]{break-inside:avoid}
+h2,h3,.cs-h2,.cs-h3{break-after:avoid}
+.print-only{display:block;break-inside:avoid;margin-top:24px;background:#16181d;color:#ffffff;border-radius:16px;padding:28px 32px}
+.print-only a{color:#ffffff}
+}
+</style>
 </head>
 <body>
 <div style="background: #ffffff; color: #16181d; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100vh">
@@ -49,7 +72,7 @@ a{color:#6b2346}a:hover{color:#4a1830}
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; align-items: center">
 <a href="index.html#about" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">About</a>
 <a href="index.html#work" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">Highlights</a>
-<a href="index.html#samples" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">Work sample</a>
+<a href="index.html#samples" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">Work samples</a>
 <a href="index.html#experience" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">Experience</a>
 <a href="index.html#contact" style="color: #3f4450; text-decoration: none; padding: 10px 12px; font-weight: 500">Contact</a>
 <a href="Live_Certification_Week_Case_Study.pdf" target="_blank" rel="noopener" style="margin-left: 8px; color: #ffffff; background: #6b2346; text-decoration: none; padding: 10px 18px; border-radius: 999px; font-weight: 500">Case study (PDF)</a>
@@ -59,8 +82,8 @@ a{color:#6b2346}a:hover{color:#4a1830}
 <section id="top" style="max-width: 1120px; margin: 0 auto; padding: 48px 24px 88px">
 <a href="index.html#work" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500; text-decoration: none; font-size: 15px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>Back to highlights</a>
 <p style="margin: 32px 0 20px" class="cs-eyebrow">Case study · Payscale · 2024–2025</p>
-<h1 style="margin: 0; max-width: 900px; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(38px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.025em">Live Certification Week: bringing a self-paced academy to life</h1>
-<p style="margin: 28px 0 0; max-width: 720px; font-size: 20px; color: #4a4f5c">I conceived and led a live, multi-day certification event that turned a self-paced video academy into an instructor-led experience. Both years it ran, it produced the highest monthly certification count of the year.</p>
+<h1 style="margin: 0; max-width: 900px; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(38px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.025em">Live Certification Week: bringing a self-paced Academy-based certification course to life</h1>
+<p style="margin: 28px 0 0; max-width: 720px; font-size: 20px; color: #4a4f5c">I conceived and led a live, multi-day certification event that turned a self-paced, Academy-based certification course into an instructor-led experience. Both years it ran, it produced the highest monthly certification count of the year.</p>
 <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px">
 <a href="Live_Certification_Week_Case_Study.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background: #16181d; color: #ffffff; text-decoration: none; padding: 14px 24px; border-radius: 999px; font-weight: 500"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Download case study (PDF)</a>
 <a href="#results" style="color: #16181d; text-decoration: none; padding: 13px 23px; border-radius: 999px; font-weight: 500; border: 1px solid #c9ccd3">Jump to results</a>
@@ -89,8 +112,8 @@ a{color:#6b2346}a:hover{color:#4a1830}
 <div class="cs-row">
 <div class="cs-side"><h2 class="cs-h2">The challenge</h2></div>
 <div class="cs-main">
-<p class="cs-lead">Our newly launched Academy certification program was built on short-form videos and articles. That suits independent, self-paced learners, but not everyone learns that way.</p>
-<p>Many learners absorb material better in a live setting, where they can ask questions in the moment and work through content on a defined schedule. Without that structure, they were less likely to start or finish a certification. We needed a way to reach them and build momentum behind the new program, without rebuilding the curriculum from scratch.</p>
+<p class="cs-lead">Our newly launched Academy-based certification courses were built on short-form videos and articles. That format suits independent, self-paced learners, but not everyone learns that way.</p>
+<p>Many learners absorb material better in a live setting, where they can ask questions in the moment and work through content on a defined schedule. Without that structure, they were less likely to start or finish a certification. We needed a way to reach them and build momentum behind the new certification courses, without rebuilding the curriculum from scratch.</p>
 </div>
 </div>
 </section>
@@ -100,7 +123,7 @@ a{color:#6b2346}a:hover{color:#4a1830}
 <div style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: start">
 <div class="cs-side"><h2 class="cs-h2">The approach</h2></div>
 <div class="cs-main">
-<p class="cs-lead">I proposed a live certification event to complement the video series. Instead of writing new curriculum, we translated the existing video scripts into webinar scripts and delivered them over several days in 90–120 minute sessions.</p>
+<p class="cs-lead">I proposed a live certification event to complement the self-paced video courses. Instead of writing new curriculum, we translated the existing video scripts into webinar scripts and delivered them over several days in 90–120 minute sessions.</p>
 <p>The first year covered two certifications: Compensation Fundamentals and one of our flagship products, whose video scripts I had also written.</p>
 </div>
 </div>
@@ -241,7 +264,7 @@ a{color:#6b2346}a:hover{color:#4a1830}
 <div class="cs-side"><h2 class="cs-h2">Key takeaways</h2></div>
 <div class="cs-main">
 <div style="display: flex; flex-direction: column; gap: 0">
-<div style="padding: 18px 0; border-bottom: 1px solid #e6e8ec"><p style="margin: 0; font-weight: 600; color: #16181d">Meet learners where they are.</p><p style="margin: 2px 0 0">Adding a live option to self-paced content reached a different audience and multiplied certifications.</p></div>
+<div style="padding: 18px 0; border-bottom: 1px solid #e6e8ec"><p style="margin: 0; font-weight: 600; color: #16181d">Meet learners where they are.</p><p style="margin: 2px 0 0">Adding a live option to self-paced certification courses reached a different audience and multiplied certifications.</p></div>
 <div style="padding: 18px 0; border-bottom: 1px solid #e6e8ec"><p style="margin: 0; font-weight: 600; color: #16181d">Reuse before you rebuild.</p><p style="margin: 2px 0 0">Adapting existing video scripts delivered a new format without new curriculum.</p></div>
 <div style="padding: 18px 0; border-bottom: 1px solid #e6e8ec"><p style="margin: 0; font-weight: 600; color: #16181d">Let structure do the work.</p><p style="margin: 2px 0 0">A tiered, cumulative schedule let each learner commit only the time their goal required.</p></div>
 <div style="padding: 18px 0; border-bottom: 1px solid #e6e8ec"><p style="margin: 0; font-weight: 600; color: #16181d">Solve for today's tools, then scale.</p><p style="margin: 2px 0 0">A simple Asana workaround launched the event on Zoom; Goldcast removed the manual work once it was proven.</p></div>
@@ -251,6 +274,11 @@ a{color:#6b2346}a:hover{color:#4a1830}
 </div>
 </section>
 
+<div class="print-only">
+<p style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:500">Rebecca Kavalchuck, MBA</p>
+<p style="margin:6px 0 16px;color:#c4c8d2">Customer Education, Enablement &amp; Professional Services leader</p>
+<p style="margin:0;line-height:1.8"><a href="https://rebeccakavalchuck.com">rebeccakavalchuck.com</a><br><a href="mailto:kavalchuck.rf@gmail.com">kavalchuck.rf@gmail.com</a><br><a href="https://www.linkedin.com/in/rebecca-kavalchuck-mba">linkedin.com/in/rebecca-kavalchuck-mba</a></p>
+</div>
 <section id="contact" style="background: #16181d; color: #ffffff">
 <div style="max-width: 1120px; margin: 0 auto; padding: 112px 24px">
 <div>
