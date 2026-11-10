@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet Rebecca: A 10-Minute Course</title>
+<meta name="description" content="An optional 10-minute course about Rebecca Kavalchuck, MBA: results, work samples, experience and recommendations, built the way she'd build customer training.">
+<meta property="og:title" content="Meet Rebecca: A 10-Minute Course">
+<meta property="og:description" content="An optional, interactive course about Rebecca Kavalchuck's customer education work.">
+<meta property="og:image" content="https://rebeccakavalchuck.com/images/linkedin-preview.jpg">
+<meta property="og:url" content="https://rebeccakavalchuck.com/course.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236b2346'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3ERK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#6b2346; --plum-d:#521a35; --plum-l:#f6edf1; --plum-m:#e3c9d5;
+  --ink:#16181d; --text:#3f4450; --muted:#6b7080; --line:#e6e8ec; --bg:#f6f7f9; --card:#fff;
+  --ok:#2f7d5b; --ok-l:#e8f4ee; --warn:#a6561b; --warn-l:#fbf0e6;
+  --r:16px; --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.15;margin:0 0 .5em;font-weight:500;letter-spacing:-.025em;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#2b2e36}
+a{color:var(--plum)}
+button{font:inherit;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 22px;font-weight:500;font-size:16px;text-decoration:none;transition:.15s}
+.btn-primary{background:var(--plum);color:#fff}
+.btn-primary:hover{background:var(--plum-d)}
+.btn-ghost{background:transparent;color:var(--plum);border:1.5px solid var(--plum-m)}
+.btn-ghost:hover{background:var(--plum-l)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.hidden{display:none!important}
+
+/* ---------- Landing ---------- */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+.brand{font-weight:600;font-size:16px;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand .dot{width:30px;height:30px;border-radius:8px;background:var(--plum);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;font-family:Arial,sans-serif}
+.brand small{font-weight:500;color:var(--muted);font-size:13px;border-left:1px solid var(--line);padding-left:10px}
+.toplinks{display:flex;gap:6px;align-items:center;font-size:16px}
+.toplinks a.lk{text-decoration:none;color:var(--text);font-weight:500;padding:8px 12px}
+.toplinks a.lk:hover{color:var(--plum)}
+.hero{background:#fff;color:var(--ink);padding:72px 28px 80px}
+.hero-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--plum-l);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500;margin-bottom:24px;color:var(--ink)}
+.pill:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--plum)}
+.hero h1{font-size:clamp(36px,5.2vw,58px);letter-spacing:-.03em}
+.hero p.lead{font-size:18px;color:var(--text);max-width:560px}
+.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin:22px 0 30px;font-size:15px;color:var(--text)}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.instructor{background:#fff;color:var(--ink);border-radius:20px;padding:28px;border:.8px solid var(--line)}
+.avatar{width:64px;height:64px;border-radius:14px;background:var(--plum);color:#fff;display:grid;place-items:center;font-family:Arial,sans-serif;font-weight:700;font-size:22px;flex:none}
+.inst-head{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+.inst-head small{display:block;color:var(--muted);font-size:13px}
+.inst-head strong{font-size:17px}
+.inst-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.inst-stats div{background:var(--bg);border-radius:12px;padding:12px 14px}
+.inst-stats b{display:block;font-family:"Space Grotesk",sans-serif;font-size:26px;font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+.inst-stats span{font-size:12px;color:var(--muted)}
+.section{max-width:1120px;margin:0 auto;padding:56px 28px}
+.section h2{font-size:clamp(28px,3.4vw,36px)}
+.foot{background:var(--ink);color:#9aa0ad;text-align:center;padding:28px;font-size:14px}
+.foot a{color:#fff;text-decoration:none;margin:0 10px}
+.learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.learn-grid div{display:flex;gap:12px;background:var(--bg);border:.8px solid var(--line);border-radius:12px;padding:16px}
+.check{color:var(--ok);font-weight:700;flex:none}
+.curr{margin-top:20px;border:.8px solid var(--line);border-radius:var(--r);background:#fff;overflow:hidden}
+.curr-mod{border-top:1px solid var(--line)}
+.curr-mod:first-child{border-top:0}
+.curr-mod h4{margin:0;padding:18px 22px;background:var(--bg);display:flex;justify-content:space-between;font-size:17px;font-family:"Space Grotesk",sans-serif;font-weight:500}
+.curr-mod h4 span{color:var(--muted);font-weight:500;font-size:13px}
+.curr-mod ul{list-style:none;margin:0;padding:4px 0}
+.curr-mod li{padding:9px 20px 9px 44px;font-size:14.5px;display:flex;justify-content:space-between;position:relative;color:var(--text)}
+.curr-mod li:before{content:"▸";position:absolute;left:22px;color:var(--plum-m)}
+.curr-mod li span{color:var(--muted);font-size:13px}
+.express{background:var(--ink);color:#fff;border-radius:20px;padding:30px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.express p{margin:0;color:#c9ccd4}
+.express h3{color:#fff}
+.express .btn-ghost{color:#fff;border-color:rgba(255,255,255,.3)}
+.express .btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* ---------- Player ---------- */
+.player{display:grid;grid-template-columns:320px 1fr;min-height:100vh;background:var(--bg)}
+.side{background:#fff;border-right:1px solid var(--line);position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+.side-head{padding:20px 22px;border-bottom:1px solid var(--line)}
+.side-head .back{font-size:13px;color:var(--muted);background:none;border:0;padding:0;margin-bottom:10px}
+.side-head .back:hover{color:var(--plum)}
+.side-head h3{font-size:20px;margin:0 0 12px}
+.prog-wrap{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.prog{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--plum);width:0;transition:width .4s ease}
+.side-mod{padding:14px 0 4px}
+.side-mod-title{padding:0 22px 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.side-lesson{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;padding:10px 22px;font-size:14.5px;color:var(--ink);border-left:3px solid transparent}
+.side-lesson:hover{background:var(--bg)}
+.side-lesson.active{background:var(--plum-l);border-left-color:var(--plum);font-weight:500}
+.side-lesson .st{width:20px;height:20px;border-radius:50%;border:2px solid var(--plum-m);flex:none;margin-top:2px;display:grid;place-items:center;font-size:11px;color:#fff}
+.side-lesson.done .st{background:var(--ok);border-color:var(--ok)}
+.side-lesson small{display:block;color:var(--muted);font-weight:400;font-size:12px}
+.side-foot{margin-top:auto;padding:16px 22px;border-top:1px solid var(--line);font-size:13px}
+.side-foot a{display:block;margin:4px 0;text-decoration:none;font-weight:500}
+.main{min-width:0}
+.mob-bar{display:none}
+.lesson{max-width:780px;margin:0 auto;padding:44px 32px 120px}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:8px;font-weight:500}
+.lesson h1{font-size:clamp(28px,4vw,38px)}
+.time{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--ink);background:var(--plum-l);border:0!important;border:.8px solid var(--line);padding:4px 10px;border-radius:99px;margin-bottom:24px}
+.lesson p{color:var(--text)}
+.card{background:var(--card);border:.8px solid var(--line);border-radius:var(--r);padding:22px 24px;margin:20px 0;box-shadow:var(--shadow)}
+.callout{background:var(--plum-l);border-radius:16px;padding:18px 22px;margin:20px 0}
+.callout b{color:var(--plum)}
+.objectives{list-style:none;padding:0;margin:0}
+.objectives li{padding:8px 0 8px 32px;position:relative;border-bottom:1px dashed var(--line)}
+.objectives li:last-child{border:0}
+.objectives li:before{content:"✓";position:absolute;left:0;top:8px;width:22px;height:22px;border-radius:50%;background:var(--ok-l);color:var(--ok);display:grid;place-items:center;font-size:12px;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}
+.stat{background:#fff;border:.8px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.stat b{font-family:"Space Grotesk",sans-serif;font-size:40px;font-weight:500;letter-spacing:-.03em;color:var(--ink);display:block;line-height:1.1}
+.stat span{font-size:14px;color:var(--muted)}
+.cs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.cs div{background:var(--bg);border-radius:16px;padding:20px}
+.cs h4{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--plum);font-weight:600}
+.cs p{margin:0;font-size:14.5px}
+.nav-foot{position:fixed;bottom:0;left:320px;right:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:10}
+.nav-foot .mid{font-size:13px;color:var(--muted)}
+
+/* quiz & scenario */
+.q{margin:18px 0}
+.q-title{font-weight:600;margin-bottom:10px}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:13px 16px;margin:8px 0;font-size:15px;transition:.15s}
+.opt:hover:not(:disabled){border-color:var(--plum-m);background:var(--bg)}
+.opt.right{border-color:var(--ok);background:var(--ok-l)}
+.opt.wrong{border-color:var(--warn);background:var(--warn-l)}
+.opt:disabled{cursor:default}
+.fb{border-radius:12px;padding:14px 16px;margin-top:6px;font-size:14.5px}
+.fb.good{background:var(--ok-l);color:#1e5a40}
+.fb.meh{background:var(--warn-l);color:#7a3f12}
+.score{font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:22px;color:var(--plum);margin-top:12px}
+
+/* microlearning */
+.micro{border:.8px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:var(--shadow);margin:22px 0}
+.micro-top{background:var(--ink);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;font-size:13px}
+.micro-dots{display:flex;gap:5px}
+.micro-dots i{width:22px;height:4px;border-radius:2px;background:rgba(255,255,255,.25)}
+.micro-dots i.on{background:#fff}
+.micro-body{padding:28px;min-height:260px}
+.micro-body h3{font-size:22px}
+.micro-foot{display:flex;justify-content:space-between;padding:14px 18px;border-top:1px solid var(--line);background:var(--bg)}
+.pct{position:relative;height:56px;margin:26px 6px 34px}
+.pct-bar{position:absolute;top:22px;left:0;right:0;height:12px;border-radius:99px;background:linear-gradient(90deg,#efe2e9,var(--plum))}
+.pct-mark{position:absolute;top:0;transform:translateX(-50%);text-align:center;font-size:12px;font-weight:600;color:var(--plum)}
+.pct-mark:after{content:"";display:block;width:2px;height:36px;background:var(--ink);margin:2px auto 0}
+.pct-mark small{display:block;position:absolute;top:60px;left:50%;transform:translateX(-50%);white-space:nowrap;color:var(--muted);font-weight:500}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.seg div{background:var(--plum-l);border-radius:10px;padding:14px;text-align:center;font-size:14px}
+.seg b{display:block;font-size:20px}
+
+/* video */
+.video{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--ink);display:grid;place-items:center;color:#fff;text-decoration:none;margin:20px 0;box-shadow:var(--shadow)}
+.video .play{width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--plum);font-size:28px;padding-left:5px;transition:.2s}
+.video:hover .play{transform:scale(1.07)}
+.video .vlabel{position:absolute;left:20px;bottom:18px;font-size:14px}
+.video .vlabel b{display:block;font-size:18px;font-family:"Space Grotesk",sans-serif}
+.video .dur{position:absolute;right:16px;bottom:18px;background:rgba(0,0,0,.5);padding:3px 9px;border-radius:6px;font-size:13px}
+.notice{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.notice div{background:#fff;border:.8px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14.5px}
+.notice b{display:block;color:var(--plum);margin-bottom:2px}
+
+/* timeline */
+.tl{position:relative;margin:24px 0;padding-left:28px}
+.tl:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--plum-m)}
+.tl-item{position:relative;margin-bottom:12px}
+.tl-item:before{content:"";position:absolute;left:-26px;top:20px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--plum)}
+.tl-btn{width:100%;text-align:left;background:#fff;border:.8px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tl-btn:hover{border-color:var(--plum-m)}
+.tl-btn b{display:block;font-size:16px}
+.tl-btn small{color:var(--muted)}
+.tl-btn .chev{color:var(--plum);transition:.2s;font-size:18px}
+.tl-item.open .chev{transform:rotate(90deg)}
+.tl-body{display:none;padding:12px 18px 4px;font-size:14.5px}
+.tl-item.open .tl-body{display:block}
+.tl-body ul{margin:0;padding-left:18px}
+.tl-body li{margin:4px 0}
+
+/* flip cards */
+.flips{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.flip{perspective:900px;height:150px;background:none;border:0;padding:0}
+.flip-in{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .flip-in{transform:rotateY(180deg)}
+.flip-f,.flip-b{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:14px;text-align:center}
+.flip-f{background:#fff;border:.8px solid var(--line);box-shadow:var(--shadow)}
+.flip-f b{font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:18px}
+.flip-f small{color:var(--muted);font-size:12px;margin-top:6px}
+.flip-b{background:var(--ink);color:#fff;transform:rotateY(180deg);font-size:13.5px;line-height:1.5}
+
+/* testimonials */
+.tm{background:#fff;border:.8px solid var(--line);border-radius:var(--r);padding:22px 24px;margin:14px 0;box-shadow:var(--shadow)}
+.tm-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.tm-head .avatar{width:44px;height:44px;font-size:15px;border-radius:50%;background:var(--plum-l);color:var(--plum)}
+.tm-head small{display:block;color:var(--muted);font-size:13px}
+.tm p{margin:0;font-size:15px}
+.tm blockquote{margin:0 0 8px;font-family:"Space Grotesk",sans-serif;font-weight:500;letter-spacing:-.01em;font-size:22px;color:var(--plum)}
+.ph{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px}
+
+/* certificate */
+.cert-form{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cert-form input{flex:1;min-width:220px;padding:12px 16px;border:1.5px solid var(--line);border-radius:999px;font:inherit}
+.cert-form input:focus{outline:none;border-color:var(--plum)}
+.cert{background:#fff;border:.8px solid var(--line);border-radius:20px;border-top:10px solid var(--plum);padding:46px 40px;text-align:center;margin:24px 0;box-shadow:var(--shadow)}
+.cert small{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px}
+.cert h2{font-size:36px;color:var(--ink);margin:10px 0 18px}
+.cert .who{font-family:"Space Grotesk",sans-serif;font-weight:500;letter-spacing:-.02em;font-size:38px;border-bottom:2px solid var(--plum-m);display:inline-block;padding:0 24px 6px;margin:12px 0}
+.cert .seal{width:72px;height:72px;border-radius:16px;background:var(--plum);color:#fff;display:grid;place-items:center;margin:24px auto 8px;font-family:Arial,sans-serif;font-weight:700;font-size:24px;box-shadow:0 0 0 6px var(--plum-l)}
+.cert-row{display:flex;justify-content:space-between;margin-top:20px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.cta-grid a{background:#fff;border:.8px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow)}
+.cta-grid a:hover{border-color:var(--plum)}
+.cta-grid b{display:block;color:var(--plum)}
+.cta-grid small{color:var(--muted);word-break:break-all}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:50;overflow:hidden}
+.confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg)}}
+.toast{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;font-size:14px;z-index:40;opacity:0;transition:.3s;pointer-events:none}
+.toast.show{opacity:1}
+
+@media print{
+  body *{visibility:hidden}
+  #certOut .cert,#certOut .cert *{visibility:visible}
+  #certOut .cert{position:fixed;left:0;right:0;top:40px;margin:0 auto;max-width:720px}
+  .nav-foot,.side,.mob-bar{display:none!important}
+}
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .learn-grid,.stats,.notice{grid-template-columns:1fr}
+  .cs,.cta-grid{grid-template-columns:1fr}
+  .flips{grid-template-columns:repeat(2,1fr)}
+  .player{grid-template-columns:1fr}
+  .side{position:fixed;left:0;top:0;width:300px;z-index:30;transform:translateX(-100%);transition:.25s;box-shadow:0 0 40px rgba(0,0,0,.2)}
+  .side.open{transform:none}
+  .mob-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:15}
+  .mob-bar button{background:var(--plum-l);color:var(--plum);border:0;border-radius:8px;padding:8px 12px;font-weight:600}
+  .nav-foot{left:0;padding:12px 16px}
+  .nav-foot .mid{display:none}
+  .lesson{padding:28px 20px 120px}
+  .toplinks a.hide-m{display:none}
+  .seg{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .topbar{padding:12px 16px}
+  .brand small,.brand .nm{display:none}
+  .toplinks a.lk{padding:8px 8px}
+  .hero{padding:48px 16px 56px}
+  .section{padding:44px 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= LANDING ================= -->
+<div id="landing">
+  <div class="topbar">
+    <div class="brand"><div class="dot">RK</div><span class="nm">Rebecca Kavalchuck, MBA</span><small>Academy</small></div>
+    <div class="toplinks">
+      <a class="lk" href="./">← Portfolio</a>
+      <a class="lk hide-m" href="https://www.linkedin.com/in/rebecca-kavalchuck-mba">LinkedIn</a>
+      <a class="btn btn-primary" style="padding:10px 18px" href="Rebecca_Kavalchuck_Resume.pdf">Résumé (PDF)</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="pill">Optional · Free 10-minute course</span>
+        <h1>Meet Rebecca: A 10-Minute Course</h1>
+        <p class="lead">You're evaluating a customer education leader, so here's a course instead of a résumé. Go through the results, the work and the people behind it, the way your customers would go through a well-built academy.</p>
+        <div class="hero-meta">
+          <span>About 10 minutes</span><span>·</span><span>4 modules, 12 lessons</span><span>·</span><span>Certificate at the end</span>
+        </div>
+        <div class="hero-btns">
+          <button class="btn btn-dark" onclick="startCourse()" id="enrollBtn" style="padding:14px 24px">Enroll for free →</button>
+          <a class="btn btn-ghost" href="./">Back to portfolio</a>
+        </div>
+      </div>
+      <aside class="instructor">
+        <div class="inst-head">
+          <img src="images/rebecca.jpg" alt="Rebecca Kavalchuck" style="width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 28%;flex:none">
+          <div><small>Your instructor</small><strong>Rebecca Kavalchuck, MBA</strong><small>Customer Education &amp; Professional Services Leader</small></div>
+        </div>
+        <p style="margin:0;font-size:14.5px;color:var(--text)">10+ years in SaaS and HCM software. I build programs that help customers learn, adopt and get more from the product.</p>
+        <div class="inst-stats">
+          <div><b>400%+</b><span>webinar growth</span></div>
+          <div><b>204%</b><span>certification lift</span></div>
+          <div><b>155</b><span>Academy videos</span></div>
+          <div><b>10+</b><span>years in SaaS/HCM</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>What you'll learn</h2>
+    <div class="learn-grid">
+      <div><span class="check">✓</span><span>How I grew a customer webinar program by more than 400% in five years</span></div>
+      <div><span class="check">✓</span><span>The thinking behind Live Certification Week and its 204% lift in completions</span></div>
+      <div><span class="check">✓</span><span>How I design microlearning, from needs analysis to storyboard</span></div>
+      <div><span class="check">✓</span><span>How I'd approach a stalled adoption problem on your team</span></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2>Curriculum</h2>
+    <div class="curr" id="currList"></div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="express">
+    <div class="express">
+      <div>
+        <h3 style="margin:0 0 4px">This course is optional</h3>
+        <p>Everything here is also on the main portfolio. Short on time? Grab the résumé or jump straight to the case study.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="Rebecca_Kavalchuck_Resume.pdf">Download résumé</a>
+        <button class="btn btn-ghost" onclick="startCourse('case')">Go to the case study</button>
+      </div>
+    </div>
+  </section>
+  <footer class="foot"><a href="./">Portfolio</a><a href="https://www.linkedin.com/in/rebecca-kavalchuck-mba">LinkedIn</a><a href="Rebecca_Kavalchuck_Resume.pdf">Résumé</a><div style="margin-top:10px">© 2026 Rebecca Kavalchuck, MBA</div></footer>
+</div>
+
+<!-- ================= PLAYER ================= -->
+<div id="player" class="player hidden">
+  <aside class="side" id="side">
+    <div class="side-head">
+      <button class="back" onclick="showLanding()">← Course home</button>
+      <h3>Meet Rebecca</h3>
+      <div class="prog-wrap"><div class="prog"><i id="progBar"></i></div><span id="progTxt">0%</span></div>
+    </div>
+    <nav id="sideNav"></nav>
+    <div class="side-foot">
+      <a href="Rebecca_Kavalchuck_Resume.pdf">↓ Résumé (PDF)</a>
+      <a href="https://www.linkedin.com/in/rebecca-kavalchuck-mba">in LinkedIn</a>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="mob-bar"><button onclick="toggleSide()">☰ Lessons</button><span id="mobProg" style="font-size:13px;color:var(--muted)"></span></div>
+    <article class="lesson" id="lesson"></article>
+    <div class="nav-foot">
+      <button class="btn btn-ghost" id="prevBtn" onclick="go(-1)">← Previous</button>
+      <span class="mid" id="midTxt"></span>
+      <button class="btn btn-primary" id="nextBtn" onclick="completeAndNext()">Mark complete &amp; continue →</button>
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="confetti" id="confetti"></div>
+
+<script>
+/* ---------------- Course data ---------------- */
+const RESUME="Rebecca_Kavalchuck_Resume.pdf";
+const LCW_PDF="Live_Certification_Week_Case_Study.pdf";
+const LCW_PAGE="live-certification-week.html";
+const STORY_PDF="Market_Benchmarking_Storyboard.pdf";
+const VIDEO="https://vimeo.com/1239311195";
+const EMAIL="kavalchuck.rf@gmail.com";
+const LINKEDIN="https://www.linkedin.com/in/rebecca-kavalchuck-mba";
+
+const modules=[
+ {title:"Getting started",lessons:[
+   {id:"welcome",title:"Welcome to the course",min:1,type:"Intro"}]},
+ {title:"Module 1 · Results",lessons:[
+   {id:"numbers",title:"By the numbers",min:1,type:"Overview"},
+   {id:"case",title:"Case study: Live Certification Week",min:2,type:"Case study"},
+   {id:"programs",title:"Webinars and a new services team",min:1,type:"Lesson"},
+   {id:"quiz",title:"Knowledge check",min:1,type:"Quiz"}]},
+ {title:"Module 2 · Work samples",lessons:[
+   {id:"micro",title:"Interactive: Market Benchmarking 101",min:2,type:"Microlearning"},
+   {id:"video",title:"Product how-to video",min:2,type:"Video"}]},
+ {title:"Module 3 · Experience",lessons:[
+   {id:"path",title:"Career path",min:1,type:"Timeline"},
+   {id:"scenario",title:"Scenario: what would Rebecca do?",min:1,type:"Branching scenario"},
+   {id:"skills",title:"Skills and tools",min:1,type:"Flip cards"}]},
+ {title:"Module 4 · Wrap-up",lessons:[
+   {id:"recs",title:"What colleagues say",min:1,type:"Lesson"},
+   {id:"cert",title:"Your certificate and next steps",min:1,type:"Finish"}]}
+];
+const flat=[];modules.forEach((m,mi)=>m.lessons.forEach(l=>flat.push({...l,mod:m.title,mi})));
+
+/* ---------------- State (saved in this browser only) ---------------- */
+let state={done:[],idx:0,name:""};
+function load(){try{const s=JSON.parse(localStorage.getItem("rk-course")||"null");if(s)state=Object.assign(state,s);}catch(e){}}
+function save(){try{localStorage.setItem("rk-course",JSON.stringify(state));}catch(e){}}
+load();
+
+/* ---------------- Lesson content ---------------- */
+const L={};
+L.welcome=()=>`
+<p>Hi, I'm Rebecca. For more than a decade I've helped SaaS customers get real value from HCM software. I started in HR, moved into the software side, and then spent years teaching customers to use it: first one-on-one, then at scale through webinars, certifications and an on-demand Academy.</p>
+<p>I built this portfolio as a course because it's the best way to show you how I think about learning. Every lesson here uses a format I'd use with your customers.</p>
+<div class="card"><h3 style="font-size:19px">By the end of this course you'll be able to…</h3>
+<ul class="objectives">
+<li>Describe three programs I built and the results they produced</li>
+<li>See how I design a short, scenario-based microlearning lesson</li>
+<li>Predict how I'd tackle a stalled adoption or certification metric</li>
+<li>Decide whether I'm a fit for your customer education team</li></ul></div>
+<div class="callout"><b>How this works:</b> Use the sidebar to jump around, or click <b>Mark complete &amp; continue</b> to go in order. Your progress is saved in this browser. Short on time? The résumé link is always in the sidebar.</div>`;
+
+L.numbers=()=>`
+<p>Before the stories, here are the outcomes. Each of these comes up again later in the course.</p>
+<div class="stats">
+<div class="stat"><b data-count="400" data-suffix="%+">0</b><span>Five-year growth in annual customer webinar offerings at Payscale</span></div>
+<div class="stat"><b data-count="204" data-suffix="%">0</b><span>Increase in monthly certification completions during the Live Certification Week launch</span></div>
+<div class="stat"><b data-count="155">0</b><span>Academy training videos created or contributed to</span></div>
+<div class="stat"><b data-count="10" data-suffix="+">0</b><span>Years in SaaS and HCM technology: compensation, performance, benefits, payroll and time keeping</span></div>
+</div>
+<div class="callout"><b>Why it matters:</b> I report on education like a business function, using Salesforce-based KPIs and impact reporting, so leaders can see what training does for adoption and revenue.</div>`;
+
+L.case=()=>`
+<p>This is the program I'm proudest of. It started from a simple observation: customers wanted live, instructor-led certification, but it was offered in a scattered way that was easy to put off.</p>
+<div class="cs">
+<div><h4>Challenge</h4><p>Certification uptake wasn't keeping pace with demand for live, guided learning.</p></div>
+<div><h4>Approach</h4><p>I came up with Live Certification Week, a concentrated, recurring week of instructor-led certification sessions, and expanded the live offerings by 50%.</p></div>
+<div><h4>Results</h4><p>Completions rose 204% in 2024 and another 113% in 2025.</p></div>
+</div>
+<div class="stats">
+<div class="stat"><b>+204%</b><span>certification completions, 2024</span></div>
+<div class="stat"><b>+113%</b><span>certification completions, 2025</span></div>
+</div>
+<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+<div><b>Want the full story?</b><br><span style="color:var(--muted);font-size:14px">Goals, rollout, promotion and metrics.</span></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="${LCW_PAGE}">Read the case study</a><a class="btn btn-ghost" href="${LCW_PDF}">PDF</a></div></div>`;
+
+L.programs=()=>`
+<h3 style="font-size:21px">Scaling the customer webinar program</h3>
+<p>At Payscale I grew annual webinar offerings by more than 400% over five years. The payoff went beyond attendance: attendees showed 2–3× higher product engagement than non-attendees, which made webinars an adoption lever rather than just a nice extra.</p>
+<h3 style="font-size:21px;margin-top:28px">Building the Academy</h3>
+<p>I wrote the full Compensation Fundamentals Certification curriculum and every script in it, co-designed the Payfactors curriculum, and produced videos in Camtasia: 155 videos in all. I also created paid one-on-one offerings (New Account Training and Personalized Product Training) that turned training hours into revenue.</p>
+<h3 style="font-size:21px;margin-top:28px">Launching a Professional Services team</h3>
+<p>At Ascentis (a UKG company), I built a new revenue-generating special projects team. We scoped, priced, staffed and delivered work across five products: benefits, performance, compensation planning, employee self-service and time keeping.</p>
+<div class="callout"><b>The common thread:</b> I build programs people actually use, and I tie them to numbers leadership cares about.</div>`;
+
+const QUIZ=[
+ {q:"Which program grew more than 400% over five years?",o:["Paid one-on-one training","Annual customer webinar offerings","The Academy video library"],a:1,why:"Webinar offerings grew 400%+, and attendees showed 2–3× higher product engagement."},
+ {q:"What did Live Certification Week do to monthly certification completions at launch?",o:["Up 50%","Up 113%","Up 204%"],a:2,why:"Completions rose 204% in 2024. (50% was the expansion in live offerings, and 113% was 2025's further gain.)"},
+ {q:"How many Academy training videos has Rebecca created or contributed to?",o:["55","155","500"],a:1,why:"155 videos, including the full Compensation Fundamentals Certification curriculum."}
+];
+L.quiz=()=>`<p>A quick check before Module 2. This isn't graded, though I'll admit I'd like you to remember these numbers.</p>
+<div id="quizBox">${QUIZ.map((x,i)=>`<div class="q card" data-q="${i}"><div class="q-title">${i+1}. ${x.q}</div>${x.o.map((o,j)=>`<button class="opt" onclick="answer(${i},${j},this)">${o}</button>`).join("")}<div class="fbx"></div></div>`).join("")}</div>
+<div class="score" id="score"></div>`;
+
+const MICRO=[
+ ()=>`<small style="color:var(--plum);font-weight:600;letter-spacing:.06em">SCENARIO</small><h3>Meet Dana, an HR manager</h3><p>Dana needs to set pay for a new Senior Data Analyst role. Leadership wants to be "competitive," but nobody has said what that means. By the end of this lesson, Dana (and you) will be able to choose a percentile target and pick the right market to compare against.</p>`,
+ ()=>`<small style="color:var(--plum);font-weight:600;letter-spacing:.06em">CONCEPT 1</small><h3>What a percentile target means</h3><p>Salary survey data is reported in percentiles. A 50th-percentile target means paying at the market median. Half of comparable employers pay more and half pay less.</p>
+ <div class="pct"><div class="pct-bar"></div>
+ <div class="pct-mark" style="left:25%">25th<small>below market</small></div>
+ <div class="pct-mark" style="left:50%">50th<small>market median</small></div>
+ <div class="pct-mark" style="left:75%">75th<small>lead the market</small></div></div>`,
+ ()=>`<small style="color:var(--plum);font-weight:600;letter-spacing:.06em">CONCEPT 2</small><h3>Compare against the right market</h3><p>A percentile only means something against the right peer group. Dana narrows her survey data by segment:</p>
+ <div class="seg"><div><b>🏭</b>Industry</div><div><b>🏢</b>Company size</div><div><b>📍</b>Geography</div></div>
+ <p style="margin-top:16px">Comparing a local mid-size firm against national big-tech data would push her numbers too high.</p>`,
+ ()=>`<small style="color:var(--plum);font-weight:600;letter-spacing:.06em">KNOWLEDGE CHECK</small><h3>Data analysts are hard to hire in Dana's region. Which target fits best?</h3>
+ <div id="mq"><button class="opt" onclick="microAns(0,this)">25th percentile, to keep costs down</button><button class="opt" onclick="microAns(1,this)">75th percentile, to lead the market for a hard-to-fill role</button><button class="opt" onclick="microAns(2,this)">Whatever the last hire was paid</button><div id="mfb"></div></div>`,
+ ()=>`<small style="color:var(--plum);font-weight:600;letter-spacing:.06em">RECAP</small><h3>What Dana learned</h3><ul class="objectives"><li>A percentile target states how competitive you want to be</li><li>The 50th percentile is the market median; leading roles often aim higher</li><li>Segmenting by industry, size and location keeps the comparison fair</li></ul>`
+];
+let microStep=0;
+L.micro=()=>{microStep=0;return `<p>My original storyboard is for a 3-minute microlearning video. Here's a clickable version of it: one workplace scenario, short concept segments, a knowledge check partway through and a closing recap.</p>
+<div class="micro"><div class="micro-top"><span>Market Benchmarking 101</span><span class="micro-dots" id="mdots"></span></div><div class="micro-body" id="mbody"></div>
+<div class="micro-foot"><button class="btn btn-ghost" id="mprev" onclick="microGo(-1)">Back</button><button class="btn btn-primary" id="mnext" onclick="microGo(1)">Next</button></div></div>
+<div class="card"><b>My role:</b> needs analysis, learning objectives, scripting and storyboarding (in Canva). <a href="${STORY_PDF}">View the original storyboard (PDF) →</a></div>`;};
+
+L.video=()=>`<p>A 2:17 product how-to that walks through making a hire in an applicant-tracking and onboarding flow. The product, Fernbrook HR, is fictional. I planned, narrated and produced it end to end.</p>
+<div class="video" style="display:block"><iframe src="https://player.vimeo.com/video/1239311195?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;color=6b2346" title="Making Your Next Hire with Fernbrook HR | Product Training Demo" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;display:block;border:0"></iframe></div>
+<h3 style="font-size:19px">What to look for</h3>
+<div class="notice">
+<div><b>Task-first structure</b>It opens on the outcome, then shows only the clicks needed to get there.</div>
+<div><b>Timed callouts</b>On-screen highlights match the narration, so attention lands in the right place.</div>
+<div><b>Branded intro and outro</b>Consistent bookends make a 155-video library feel like one academy.</div>
+<div><b>Plain-language narration</b>Explains why each step matters, not just where to click.</div></div>`;
+
+const ROLES=[
+ {t:"Team Lead, Customer Education",c:"Payscale",d:"2021–2026",b:["Promoted from Senior Customer Support Associate to Product Training Manager, Senior Product Training Manager, then Team Lead","Grew webinars and live attendance about 400%; launched Live Certification Week","Created paid New Account Training and Personalized Product Training","Built Academy and certification curricula (155 videos), Salesforce KPIs and SOPs","Ran paid workshops at the Compference event; built AI-assisted workflows for scripts, Asana digests and metrics analysis"]},
+ {t:"Team Lead, Professional Services",c:"Ascentis (a UKG company)",d:"2016–2021",b:["Promoted from consultant","Launched and led a new revenue-generating special projects team","Managed client engagements, HCM implementations and go-live training"]},
+ {t:"Professional Services Product Support Specialist",c:"Salary.com (formerly IBM)",d:"2013–2016",b:["One-on-one training and troubleshooting for compensation software","Supported about 200 accounts and handled data imports"]},
+ {t:"HR roles",c:"National Grid · Boston Scientific · Raytheon · IDC Research",d:"Earlier",b:["HR Business Partner, Talent Acquisition Coordinator, HR Specialist, and Education & HR Coordinator","This is why I understand the HR buyer I'm training"]},
+ {t:"Education",c:"MBA, Human Resources Management",d:"Walden University",b:["BGS, Human Services, University of Connecticut","AS, Liberal Arts & Sciences, Three Rivers Community College"]}
+];
+L.path=()=>`<p>HR practitioner, then software specialist, then education leader. Click a role to expand it.</p>
+<div class="tl">${ROLES.map((r,i)=>`<div class="tl-item${i===0?' open':''}"><button class="tl-btn" onclick="this.parentElement.classList.toggle('open')"><span><b>${r.t}</b><small>${r.c} · ${r.d}</small></span><span class="chev">›</span></button><div class="tl-body"><ul>${r.b.map(x=>`<li>${x}</li>`).join("")}</ul></div></div>`).join("")}</div>`;
+
+const SCN=[
+ {t:"Send more reminder emails about the self-paced certification",ok:false,f:"Reminders help a bit, but they don't fix the real issue: self-paced certification is easy to put off. I'd keep them as support, not as the strategy."},
+ {t:"Bundle live, instructor-led certification into one recurring, well-promoted week",ok:true,f:"That's what I did with Live Certification Week. A fixed, time-boxed event gives customers a reason to commit now and a group to learn with. Completions rose 204% in the first year."},
+ {t:"Make the certification exam easier so more people pass",ok:false,f:"Completions would go up, but the certification would mean less to customers and to your CS team. I'd rather change how people learn than lower the bar."}
+];
+L.scenario=()=>`<div class="card" style="background:var(--ink);color:#fff;border:0"><small style="letter-spacing:.08em;opacity:.7">YOUR SITUATION</small><p style="color:#fff;font-size:17px;margin:8px 0 0">You're the VP of Customer Success. Customers keep saying they want certification, but monthly completions have stayed flat for two quarters. You hire Rebecca. What does she try first?</p></div>
+<div id="scn">${SCN.map((s,i)=>`<button class="opt" onclick="scnAns(${i},this)">${s.t}</button>`).join("")}<div id="scnfb"></div></div>`;
+
+const SK=[
+ ["Education strategy","Program design, onboarding and adoption, certification development and learning analytics"],
+ ["Delivery","Instructor-led and virtual product training, webinar facilitation and paid workshops"],
+ ["Content","Video scriptwriting and production, microlearning and AI-assisted content with human review"],
+ ["Learning tools","Skilljar, Articulate, Camtasia, Vimeo, Zoom, Goldcast, GoToWebinar and Teams"],
+ ["Data & CRM","Salesforce reporting and Tableau, with working familiarity with Gainsight and Pendo"],
+ ["HCM domain","Payfactors, MarketPay, CompAnalyst, Ascentis, Oracle, PeopleSoft, SAP and Taleo"]
+];
+L.skills=()=>`<p>Click a card to flip it.</p><div class="flips">${SK.map(s=>`<button class="flip" onclick="this.classList.toggle('on')"><div class="flip-in"><div class="flip-f"><b>${s[0]}</b><small>tap to flip</small></div><div class="flip-b">${s[1]}</div></div></button>`).join("")}</div>
+<div class="callout"><b>Also:</b> team leadership, Professional Services delivery, and Asana, Confluence, SharePoint, Slack, Highspot and Seismic for collaboration.</div>`;
+
+L.recs=()=>`<p>You've heard from me. Here's what people who worked with me have said, in their own words.</p>
+<div class="tm"><div class="tm-head"><div class="avatar">LC</div><div><b>Lauren Cole</b><small>Strategic Post-Sales People Leader · managed Rebecca directly at Payscale</small></div></div>
+<blockquote>“Simply put, Rebecca is a powerhouse.”</blockquote><p>If you are looking for a creative self-starter who can step into ambiguity, solve complex problems, and immediately elevate the customer experience, hire her. During our time working together, Rebecca completely transformed our webinar and live training strategy. She is the rare leader who pairs boundless creativity with operational execution. She significantly drove up program attendance and found innovative ways to support and educate our customers at scale.</p></div>
+<div class="tm"><div class="tm-head"><div class="avatar">JW</div><div><b>Jenna Ward, PMP</b><small>Senior Program Manager, HR &amp; SaaS Program Delivery · worked with Rebecca on the same team, and first as a customer</small></div></div>
+<blockquote>“I was impressed by her deep product knowledge and her ability to make complex topics easy to understand.”</blockquote><p>Rebecca is a great person to work with and combines exceptional product knowledge with creativity, strategic thinking, and a genuine passion for helping others learn and succeed. Having experienced Rebecca's work both as a customer and as a colleague, I can confidently say she brings tremendous value to every team she's part of.</p></div>
+<div class="tm"><div class="tm-head"><div class="avatar">RD</div><div><b>Rachel DeMarco</b><small>Community Engagement and Technical Content Manager · worked with Rebecca on the same team for six years</small></div></div>
+<blockquote>“She is truly someone who stands out as an exceptional leader, colleague, and friend.”</blockquote><p>As the manager of the webinar program on the Customer Education Team, Rebecca brought outstanding leadership, a collaborative mindset, and an impressive depth of product knowledge to everything she did. She has a natural ability to bring people together, share her expertise, and ensure the team is set up for success. Her professionalism, reliability, and willingness to support others make her an invaluable asset to any organization.</p></div>
+<div class="tm"><div class="tm-head"><div class="avatar">JB</div><div><b>Jenna Blake</b><small>Senior Product Training Manager · reported directly to Rebecca</small></div></div>
+<blockquote>“Anyone who wants a leader who genuinely cares about customer success and about the people on her team should be lucky enough to work with her.”</blockquote><p>Working with Rebecca Kavalchuck on the Customer Education team was one of the best experiences of my career. As Team Lead, she set a high bar for how we supported customers, and her 1:1 trainings and group webinars showed it. She had a rare ability to meet each customer where they were, whether that meant patiently walking someone through a complex workflow or making webinars feel lively and worth attending. She also taught me to prepare for every session with the learner in mind, not just the content. I learned how to teach more clearly and listen better because of her.</p></div>
+<p><a href="${LINKEDIN}">Read more recommendations on LinkedIn →</a></p>`;
+
+L.cert=()=>{const doneCount=state.done.filter(d=>d!=="cert").length,total=flat.length-1;
+return `<p>${doneCount>=total?"You finished every lesson. Thanks for taking the time.":`You've completed ${doneCount} of ${total} lessons. You can claim your certificate now, or go back to the ones you skipped.`}</p>
+<div class="cert-form"><input id="nm" placeholder="Your name" value="${esc(state.name)}" maxlength="40" onkeydown="if(event.key==='Enter')makeCert()"><button class="btn btn-primary" onclick="makeCert()">Generate certificate</button></div>
+<div id="certOut">${state.name?certHTML(state.name):""}</div>
+<h3 style="font-size:21px;margin-top:30px">Next step: let's talk</h3>
+<p>If you're hiring for SaaS customer education, enablement or professional services leadership, I'd love to hear about the role.</p>
+<div class="cta-grid">
+<a href="mailto:${EMAIL}"><b>Email me</b><small>${EMAIL}</small></a>
+<a href="${LINKEDIN}"><b>Connect on LinkedIn</b><small>rebecca-kavalchuck-mba</small></a>
+<a href="${RESUME}"><b>Download résumé</b><small>PDF</small></a></div>`;};
+
+function certHTML(n){const d=new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+return `<div class="cert"><small>Certificate of completion</small><h2>Meet Rebecca</h2><div style="color:var(--muted)">This certifies that</div>
+<div class="who">${esc(n)}</div><div style="color:var(--muted);max-width:440px;margin:0 auto">has completed a 10-minute course on Rebecca Kavalchuck's approach to customer education, and is now well placed to schedule an interview.</div>
+<div class="seal">RK</div>
+<div class="cert-row"><span>${d}</span><span>Instructor: Rebecca Kavalchuck, MBA</span></div></div>
+<div class="cert-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"><button class="btn btn-primary" onclick="window.print()">Save as PDF</button><a class="btn btn-ghost" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frebeccakavalchuck.com%2Fcourse.html">Share on LinkedIn</a></div>`;}
+
+/* ---------------- Rendering ---------------- */
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+
+function renderCurr(){
+  document.getElementById("currList").innerHTML=modules.map(m=>`<div class="curr-mod"><h4>${m.title}<span>${m.lessons.length} lesson${m.lessons.length>1?"s":""} · ${m.lessons.reduce((a,l)=>a+l.min,0)} min</span></h4><ul>${m.lessons.map(l=>`<li>${l.title}<span>${l.type}</span></li>`).join("")}</ul></div>`).join("");
+  const any=state.done.length>0;
+  document.getElementById("enrollBtn").textContent=any?"Resume course →":"Enroll for free →";
+}
+function renderSide(){
+  let i=0;
+  document.getElementById("sideNav").innerHTML=modules.map(m=>`<div class="side-mod"><div class="side-mod-title">${m.title}</div>${m.lessons.map(l=>{const k=i++;const d=state.done.includes(l.id);return `<button class="side-lesson${d?" done":""}${k===state.idx?" active":""}" onclick="goTo(${k})"><span class="st">${d?"✓":""}</span><span>${l.title}<small>${l.type} · ${l.min} min</small></span></button>`}).join("")}</div>`).join("");
+  const pct=Math.round(state.done.length/flat.length*100);
+  document.getElementById("progBar").style.width=pct+"%";
+  document.getElementById("progTxt").textContent=pct+"%";
+  document.getElementById("mobProg").textContent=pct+"% complete";
+}
+function renderLesson(){
+  const l=flat[state.idx];
+  const el=document.getElementById("lesson");
+  el.innerHTML=`<div class="crumb">${l.mod}</div><h1>${l.title}</h1><span class="time">⏱ ${l.min} min · ${l.type}</span>${L[l.id]()}`;
+  document.getElementById("prevBtn").disabled=state.idx===0;
+  const last=state.idx===flat.length-1;
+  document.getElementById("nextBtn").textContent=last?(state.done.includes("cert")?"Back to course home":"Finish course 🎓"):"Mark complete & continue →";
+  document.getElementById("midTxt").textContent=`Lesson ${state.idx+1} of ${flat.length}`;
+  if(l.id==="numbers")countUp();
+  if(l.id==="micro")renderMicro();
+  window.scrollTo({top:0});
+  document.getElementById("side").classList.remove("open");
+}
+
+/* ---------------- Navigation ---------------- */
+function startCourse(id){
+  if(id){state.idx=flat.findIndex(l=>l.id===id);}
+  document.getElementById("landing").classList.add("hidden");
+  document.getElementById("player").classList.remove("hidden");
+  renderSide();renderLesson();save();
+}
+function showLanding(){document.getElementById("player").classList.add("hidden");document.getElementById("landing").classList.remove("hidden");renderCurr();window.scrollTo({top:0});}
+function goTo(k){state.idx=k;save();renderSide();renderLesson();}
+function go(d){const k=state.idx+d;if(k>=0&&k<flat.length)goTo(k);}
+function markDone(id){if(!state.done.includes(id)){state.done.push(id);save();}}
+function completeAndNext(){
+  const l=flat[state.idx];
+  if(state.idx===flat.length-1){
+    if(state.done.includes("cert")){showLanding();return;}
+    markDone("cert");renderSide();confetti();toast("Course complete! 🎉");renderLesson();return;
+  }
+  markDone(l.id);toast("Lesson complete ✓");go(1);
+}
+function toggleSide(){document.getElementById("side").classList.toggle("open");}
+
+/* ---------------- Interactions ---------------- */
+function countUp(){document.querySelectorAll("[data-count]").forEach(el=>{const t=+el.dataset.count,s=el.dataset.suffix||"";let st=null;const step=ts=>{if(!st)st=ts;const p=Math.min((ts-st)/1100,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(step);};requestAnimationFrame(step);});}
+
+let quizScore={};
+function answer(i,j,btn){
+  const box=btn.parentElement,x=QUIZ[i];
+  box.querySelectorAll(".opt").forEach((b,k)=>{b.disabled=true;if(k===x.a)b.classList.add("right");});
+  if(j!==x.a)btn.classList.add("wrong");
+  quizScore[i]=j===x.a;
+  box.querySelector(".fbx").innerHTML=`<div class="fb ${j===x.a?"good":"meh"}">${j===x.a?"Correct! ":"Not quite. "}${x.why}</div>`;
+  if(Object.keys(quizScore).length===QUIZ.length){const s=Object.values(quizScore).filter(Boolean).length;document.getElementById("score").textContent=`You scored ${s}/${QUIZ.length}. ${s===3?"Perfect recall.":"Good enough to move on."}`;quizScore={};}
+}
+function renderMicro(){
+  document.getElementById("mbody").innerHTML=MICRO[microStep]();
+  document.getElementById("mdots").innerHTML=MICRO.map((_,i)=>`<i class="${i<=microStep?"on":""}"></i>`).join("");
+  document.getElementById("mprev").disabled=microStep===0;
+  document.getElementById("mnext").textContent=microStep===MICRO.length-1?"Replay":"Next";
+}
+function microGo(d){microStep=(microStep===MICRO.length-1&&d>0)?0:Math.max(0,microStep+d);renderMicro();}
+function microAns(j,btn){
+  const opts=document.querySelectorAll("#mq .opt");opts.forEach((b,k)=>{b.disabled=true;if(k===1)b.classList.add("right");});
+  if(j!==1)btn.classList.add("wrong");
+  document.getElementById("mfb").innerHTML=j===1?`<div class="fb good">Right. For a hard-to-fill role, leading the market (around the 75th percentile) helps Dana compete for candidates.</div>`:`<div class="fb meh">Not quite. In a tight market, paying below the median makes hiring harder, and past offers may not reflect today's market. Leading the market (around the 75th percentile) fits a hard-to-fill role.</div>`;
+}
+function scnAns(i,btn){
+  const s=SCN[i];
+  document.querySelectorAll("#scn .opt").forEach(b=>b.classList.remove("right","wrong"));
+  btn.classList.add(s.ok?"right":"wrong");
+  document.getElementById("scnfb").innerHTML=`<div class="fb ${s.ok?"good":"meh"}">${s.f}${s.ok?` <a href="${LCW_PAGE}">See the case study →</a>`:" Try another option."}</div>`;
+}
+function makeCert(){
+  const n=document.getElementById("nm").value.trim();
+  if(!n){document.getElementById("nm").focus();toast("Add your name first");return;}
+  state.name=n;markDone("cert");save();renderSide();
+  document.getElementById("certOut").innerHTML=certHTML(n);confetti();
+  document.getElementById("nextBtn").textContent="Back to course home";
+}
+function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("show"),1600);}
+function confetti(){const c=document.getElementById("confetti"),cols=["#6b2346","#a24a74","#e7cfdb","#2f7d5b","#f2c14e"];c.innerHTML="";for(let i=0;i<70;i++){const p=document.createElement("i");p.style.left=Math.random()*100+"vw";p.style.background=cols[i%cols.length];p.style.animationDuration=(1.8+Math.random()*1.8)+"s";p.style.animationDelay=Math.random()*.4+"s";c.appendChild(p);}setTimeout(()=>c.innerHTML="",4200);}
+
+renderCurr();
+</script>
+</body>
+</html>
