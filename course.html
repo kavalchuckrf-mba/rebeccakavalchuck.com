@@ -424,7 +424,7 @@ L.case=()=>`
 <p>This is the program I'm proudest of. It started from a simple observation: customers wanted live, instructor-led certification, but it was offered in a scattered way that was easy to put off.</p>
 <div class="cs">
 <div><h4>Challenge</h4><p>Certification uptake wasn't keeping pace with demand for live, guided learning.</p></div>
-<div><h4>Approach</h4><p>I came up with Live Certification Week, a concentrated, recurring week of instructor-led certification sessions, and expanded the live offerings by 50%.</p></div>
+<div><h4>Approach</h4><p>Following an ADDIE-aligned approach, from learner needs analysis through post-event evaluation, I came up with Live Certification Week, a concentrated, recurring week of instructor-led certification sessions, and expanded the live offerings by 50%.</p></div>
 <div><h4>Results</h4><p>Completions rose 204% in 2024 and another 113% in 2025.</p></div>
 </div>
 <div class="stats">
@@ -471,7 +471,7 @@ let microStep=0;
 L.micro=()=>{microStep=0;return `<p>My original storyboard is for a 3-minute microlearning video. Here's a clickable version of it: one workplace scenario, short concept segments, a knowledge check partway through and a closing recap.</p>
 <div class="micro"><div class="micro-top"><span>Market Benchmarking 101</span><span class="micro-dots" id="mdots"></span></div><div class="micro-body" id="mbody"></div>
 <div class="micro-foot"><button class="btn btn-ghost" id="mprev" onclick="microGo(-1)">Back</button><button class="btn btn-primary" id="mnext" onclick="microGo(1)">Next</button></div></div>
-<div class="card"><b>My role:</b> needs analysis, learning objectives, scripting and storyboarding (in Canva). <a href="${STORY_PDF}">View the original storyboard (PDF) →</a></div>`;};
+<div class="card"><b>My role:</b> ADDIE-style design: needs analysis, learning objectives, scripting and storyboarding (in Canva). <a href="${STORY_PDF}">View the original storyboard (PDF) →</a></div>`;};
 
 L.video=()=>`<p>A 2:17 product how-to that walks through making a hire in an applicant-tracking and onboarding flow. The product, Fernbrook HR, is fictional. I planned, narrated and produced it end to end.</p>
 <div class="video" style="display:block"><iframe src="https://player.vimeo.com/video/1239311195?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;color=6b2346" title="Making Your Next Hire with Fernbrook HR | Product Training Demo" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;display:block;border:0"></iframe></div>
@@ -501,7 +501,7 @@ L.scenario=()=>`<div class="card" style="background:var(--ink);color:#fff;border
 <div id="scn">${SCN.map((s,i)=>`<button class="opt" onclick="scnAns(${i},this)">${s.t}</button>`).join("")}<div id="scnfb"></div></div>`;
 
 const SK=[
- ["Education strategy","Program design, onboarding and adoption, certification development and learning analytics"],
+ ["Education strategy","Program design (ADDIE), onboarding and adoption, certification development and learning analytics"],
  ["Delivery","Instructor-led and virtual product training, webinar facilitation and paid workshops"],
  ["Content","Video scriptwriting and production, microlearning and AI-assisted content with human review"],
  ["Learning tools","Skilljar, Articulate, Camtasia, Vimeo, Zoom, Goldcast, GoToWebinar and Teams"],
